@@ -4,7 +4,8 @@ obj = {};
 obj = new Object();
 obj = Object.create(Object.prototype);
 
-obj.__proto__ // Object
+// Prototype
+obj.__proto__ //Object
 
 
 //Key assignment
