@@ -1,9 +1,9 @@
 //Singleton pattern is thus known because it restricts instantiation of a class to a single object. 
 //Singleton pattern can be implemented by creating a class with a method that creates a new instance of the class if one doesn't exist.
 //Singletons differ from static classes (or objects) as we can delay their initialization, generally because they require some information that may not be available during initialization time. 
-//Singleton creates a single copy of a function and prevents creating more same copies if the one already exists.
+//Singleton creates a single instance of a function and prevents creating more it's instances if the one already exists.
 //It is important to note the difference between a static instance of a class (object) and a Singleton: whilst a Singleton can be implemented as a static instance, it can also be constructed lazily, without the need for resources nor memory until this is actually needed.
-//So the idea is to put a function inside IIFE .That function has pub/priv methods and return the result of that inner function as a result of the IIFE, at the same time checking whether that singleton already exists in the return part of IIFE(we need a private variable in IIFE for that which will show if it's not undefined that instance has already been created and will prevent us from creating new instances). As soon as we create the first singleton, instance variable will not be empty anymore what will prevent us from creating new instances of the same function
+//So the idea is to put a function or class inside IIFE. Result of IIFE wil be the instance if that function(or class) - Singleton. In IIFE's return statement we check if  singleton already exists(we need a private variable in IIFE for that which if being undefined that the instance of this function(or class) doesn't exist and will create it, or if the variable is not undefined - will just return the same instance). This prevents us from creating multiple instances of the same function or class
 
 
 
